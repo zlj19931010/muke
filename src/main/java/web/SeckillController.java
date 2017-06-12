@@ -116,4 +116,12 @@ public class SeckillController {
         Date now=new Date();
         return new SeckillResult<>(true,now.getTime());
     }
+
+    //获取系统时间
+    @RequestMapping(value = "/time/now",method = RequestMethod.GET)
+    @ResponseBody
+    public SeckillResult<Long> test666() {
+        Date now=new Date();
+        return new SeckillResult<>(true,now.getTime());
+    }
 }
